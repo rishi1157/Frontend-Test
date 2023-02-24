@@ -12,99 +12,85 @@
 </head>
 
 <body>
-    <div class = "hero">
+    <div class="hero">
         <h2>Looking for the best payment gateway to integrate in your business...</h2>
         <h1>Here are <em>we</em>, to help <em>you</em></h1>
-        <img src="" alt="cashfree">
-        <img src="" alt="razorpay">
-        <img src="" alt="paytm">
-        <img src="" alt="paypal">
-        <img src="" alt="payu">
-        <img src="" alt="ippopay">
-        <img src="" alt="billdesk">
-        <img src="" alt="ccavenue">
-        <img src="" alt="ebs">
-        <img src="" alt="paykun">
-        <img src="" alt="instamojo">
-        <img src="" alt="easebuzz">
+        <img src="./image/cash.webp" alt="cashfree">
+        <img src="./image/razor.png" alt="razorpay">
+        <img src="./image/paytm.png" alt="paytm">
+        <img src="./image/paypal.png" alt="paypal">
+        <img src="./image/payu.png" alt="payu">
+        <img src="./image/ippo.jpeg" alt="ippopay">
+        <img src="./image/billdesk.png" alt="billdesk">
+        <img src="./image/ccavenue.png" alt="ccavenue">
+        <img src="./image/ebs.png" alt="ebs">
+        <img src="./image/paykun.png" alt="paykun">
+        <img src="./image/instamojo.jpeg" alt="instamojo">
+        <img src="./image/easebuzz.png" alt="easebuzz">
     </div>
+    <div class="card">
+        <img src="./image/cash.webp" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>CashFree</b></h4> 
+          <p>Architect & Engineer</p> 
+        </div>
+      </div>
+    <div class="result"></div>
     <ol>
         <li>
-            <p>CashFree</p>
-            <button type="button" onclick="select(1)">Add to compare</button>
+            <p class="company-name">CashFree</p>
+            <button id="select" type="button" onclick="select(1)">Add to compare</button>
         </li>
         <li>
-            <p>Razorpay</p>
+            <p class="company-name">Razorpay</p>
             <button type="button" onclick="select(2)">Add to compare</button>
         </li>
         <li>
-            <p>Paytm</p>
+            <p class="company-name">Paytm</p>
             <button type="button" onclick="select(3)">Add to compare</button>
         </li>
         <li>
-            <p>PayPal</p>
+            <p class="company-name">PayPal</p>
             <button type="button" onclick="select(4)">Add to compare</button>
         </li>
         <li>
-            <p>PayU</p>
+            <p class="company-name">PayU</p>
             <button type="button" onclick="select(5)">Add to compare</button>
         </li>
         <li>
-            <p>Ippo pay</p>
-            <button type="button">Add to compare</button>
+            <p class="company-name">Ippo pay</p>
+            <button type="button" onclick="select(6)">Add to compare</button>
         </li>
         <li>
-            <p>BillDesk</p>
-            <button type="button">Add to compare</button>
+            <p class="company-name">BillDesk</p>
+            <button type="button" onclick="select(7)">Add to compare</button>
         </li>
         <li>
-            <p>CC Avenue</p>
-            <button type="button">Add to compare</button>
+            <p class="company-name">CC Avenue</p>
+            <button type="button" onclick="select(8)">Add to compare</button>
         </li>
         <li>
-            <p>EBS</p>
-            <button type="button">Add to compare</button>
+            <p class="company-name">EBS</p>
+            <button type="button" onclick="select(9)">Add to compare</button>
         </li>
         <li>
-            <p>Paykun</p>
-            <button type="button">Add to compare</button>
+            <p class="company-name">Paykun</p>
+            <button type="button" onclick="select(10)">Add to compare</button>
         </li>
         <li>
-            <p>Instamojo</p>
-            <button type="button">Add to compare</button>
+            <p class="company-name">Instamojo</p>
+            <button type="button" onclick="select(11)">Add to compare</button>
         </li>
         <li>
-            <p>Easebuzz</p>
-            <button type="button">Add to compare</button>
+            <p class="company-name">Easebuzz</p>
+            <button type="button" onclick="select(12)">Add to compare</button>
         </li>
     </ol>
-    <button type="button" onclick="show()">Show result</button>
+
+    <button type="button" onclick="show()">Show result</button><br>
+    </div>
 
     <table id="compare">
-        <!-- <tr>
-            <th></th>
-            <th>Set-up fee</th>
-            <th>Annual fee</th>
-            <th>Transactional fee</th>
-            <th>Payment methods</th>
-            <th>Currencies</th>
-            <th>Onboarding time</th>
-            <th>eCommerce platform</th>
-            <th>Clients</th>
-        </tr> -->
-
-        <!-- <tr id="cashfree">
-            <th>Cashfree</th>
-            <td>Free</td>
-            <td>Free</td>
-            <td>1.90% Net Banking</td>
-            <td>UPI, EMI, Wallets</td>
-            <td>INR, USD, BDT</td>
-            <td>2-4 days</td>
-            <td>WooCommerce, Magento</td>
-            <td>OlaMoney, Delhivery</td>
-        </tr> -->
-
     </table>
 </body>
 
