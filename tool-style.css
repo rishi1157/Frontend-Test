@@ -1,0 +1,118 @@
+.body_outer {
+    background-color: rgba(197, 214, 233, 0.575);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 2rem;
+    height: 70vh;
+    width: 70vw;
+    margin: auto;
+    margin-top: 8%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid black; */
+}
+
+.heading {
+    /* border: 2px solid black; */
+    text-align: center;
+    padding: 2rem 2rem 0rem 2rem;
+}
+
+.sub_heading {
+    text-align: center;
+    /* border: 2px solid black; */
+    padding: 0rem 1.5rem;
+}
+
+.question {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid tomato;
+    width: 75%;
+    margin:auto;
+    margin-top: 20%;
+}
+
+.question-text{
+    padding: 0.75em;
+    text-align: center;
+}
+
+.option{
+    display: flex;
+    padding: 0.25em 0.5em;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: large;
+    width: 100%;
+    margin-top: -1%;
+    margin-bottom: 2%;
+}
+
+.question-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin-bottom: 3%;
+}
+
+.button {
+    background-color: rgb(6, 102, 245);
+    border: none;
+    border-radius: 5px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    box-shadow: 1px 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.20);
+}
+
+.button_disable {
+    background-color: rgb(150, 150, 245);
+    cursor: not-allowed;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+table {
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
+}
+
+th {
+    padding: 12px;
+    background-color: #04AA6D;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}

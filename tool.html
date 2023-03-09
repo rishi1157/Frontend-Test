@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tool-style.css">
+    <title>PayWay</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="body_outer">
+        <div class="content">
+            <div class="heading">
+                <h1>Payment Gateway Comparision</h1>
+            </div>
+            <div class="sub_heading">
+                <h2>Calculate your charges & Compare your gateway</h2>
+            </div>
+            <div lass="button_part">
+                <button type="button" class="button" onclick="initiate()">
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-1 question">
+
+        <div class="question-text">
+            <h2>Select payment methods that you want to offer?</h2>
+        </div>
+
+        <div class="option">
+            <div class="option-1">
+                <input type="checkbox" value="emi" id="emi" name="emi">
+                <label for="emi">EMI</label>
+            </div>
+            <div class="option-2">
+                <input type="checkbox" value="upi" id="upi" name="upi">
+                <label for="upi">UPI</label>
+            </div>
+            <div class="option-3">
+                <input type="checkbox" value="wallet" id="wallet" name="wallet">
+                <label for="wallet">Wallet</label>
+            </div>
+            <div class="option-4">
+                <input type="checkbox" value="card" id="card" name="card">
+                <label for="card">Debit / Credit card</label>
+            </div>
+            <div class="option-5">
+                <input type="checkbox" value="bnpl" id="bnpl" name="bnpl">
+                <label for="bnpl">BNPL</label>
+            </div>
+            <div class="option-6">
+                <input type="checkbox" value="netbanking" id="netbanking" name="netbanking">
+                <label for="netbanking">Net-Banking</label>
+            </div>
+            <div class="option-7">
+                <input type="checkbox" value="neft" id="neft" name="neft">
+                <label for="neft">NEFT / RTGS</label>
+            </div>
+        </div>
+
+        <p class="error" style ="color:red"></p>
+
+        <div class="question-footer">
+            <div class="prev">
+                <button type="button" class="button_disable">
+                    Previous
+                </button>
+            </div>
+            <div class="next">
+                <button type="button" class="button" onclick="check_1()">
+                    Next
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-2 question">
+
+        <div class="question-text">
+            <h2>Are you going to accept international cards?</h2>
+        </div>
+
+        <div class="option">
+            <div class="option-1">
+                <input type="radio" value="yes" id="yes" name="international">
+                <label for="yes">Yes</label>
+            </div>
+            <div class="option-2">
+                <input type="radio" value="no" id="no" name="international">
+                <label for="no">No</label>
+            </div>
+        </div>
+
+        <p class="error" style ="color:red"></p>
+
+        <div class="question-footer">
+            <div class="prev">
+                <button type="button" class="button" onclick="">
+                    Previous
+                </button>
+            </div>
+            <div class="next">
+                <button type="button" class="button" onclick="check_2()">
+                    Next
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="question-3 question">
+
+        <div class="question-text">
+            <h2>Do you want recurring payment option?</h2>
+        </div>
+
+        <div class="option">
+            <div class="option-1">
+                <input type="radio" value="yes" id="yes" name="recurring">
+                <label for="yes">Yes</label>
+            </div>
+            <div class="option-2">
+                <input type="radio" value="no" id="no" name="recurring">
+                <label for="no">No</label>
+            </div>
+        </div>
+
+        <p class="error" style ="color:red"></p>
+
+        <div class="question-footer">
+            <div class="prev">
+                <button type="button" class="button" onclick="">
+                    Previous
+                </button>
+            </div>
+            <div class="next">
+                <button type="button" class="button" onclick="check_3()">
+                    Next
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="question-4 question">
+
+        <div class="question-text">
+            <h2>Do you want partial payment option?</h2>
+        </div>
+
+        <div class="option">
+            <div class="option-1">
+                <input type="radio" value="yes" id="yes" name="partial">
+                <label for="yes">Yes</label>
+            </div>
+            <div class="option-2">
+                <input type="radio" value="no" id="no" name="partial">
+                <label for="no">No</label>
+            </div>
+        </div>
+
+        <p class="error" style ="color:red"></p>
+
+        <div class="question-footer">
+            <div class="prev">
+                <button type="button" class="button" onclick="">
+                    Previous
+                </button>
+            </div>
+            <div class="next">
+                <button type="button" class="button" onclick="check_4()">
+                    Next
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="question-5 question">
+
+        <div class="question-text">
+            <h2>What is the number of transaction you get per month?</h2>
+        </div>
+
+        <div class="option">
+            <div class="option-1">
+                <input type="text" id="nooftrans" name="nooftrans">
+            </div>
+        </div>
+
+        <p class="error" style ="color:red"></p>
+
+        <div class="question-footer">
+            <div class="prev">
+                <button type="button" class="button" onclick="">
+                    Previous
+                </button>
+            </div>
+            <div class="next">
+                <button type="button" class="button" onclick="check_5()">
+                    Next
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="question-6 question">
+
+        <div class="question-text">
+            <h2>What is your average transaction size?</h2>
+        </div>
+
+        <div class="option">
+            <div class="option-1">
+                <input type="text" id="avgtrans" name="avgtrans">
+            </div>
+        </div>
+
+        <p class="error" style ="color:red"></p>
+
+        <div class="question-footer">
+            <div class="prev">
+                <button type="button" class="button" onclick="">
+                    Previous
+                </button>
+            </div>
+            <div class="next">
+                <button type="button" class="button" onclick="check_6()">
+                    Next
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="question-7 question">
+
+        <div class="question-text">
+            <h2>Do you want to add these features?</h2>
+            <p>( Interactive dasboard for analytics, Coupons, Fraud Management )</p>
+        </div>
+
+        <div class="option">
+            <div class="option-1">
+                <input type="radio" value="yes" id="yes" name="features">
+                <label for="yes">Yes</label>
+            </div>
+            <div class="option-2">
+                <input type="radio" value="no" id="no" name="features">
+                <label for="no">No</label>
+            </div>
+        </div>
+
+        <p class="error" style ="color:red"></p>
+
+        <div class="question-footer">
+            <div class="prev">
+                <button type="button" class="button" onclick="">
+                    Previous
+                </button>
+            </div>
+            <div class="next">
+                <button type="button" class="button" onclick="check_7()">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

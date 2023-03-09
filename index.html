@@ -2,9 +2,7 @@
 <html lang='en'>
 
 <head>
-    <title>
-        Fronend Test
-    </title>
+    <title>PayWay</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width = device-width, initial-scale = 1.0">
     <link rel="stylesheet" href="style.css">
@@ -12,86 +10,35 @@
 </head>
 
 <body>
-    <div class="hero">
-        <h2>Looking for the best payment gateway to integrate in your business...</h2>
-        <h1>Here are <em>we</em>, to help <em>you</em></h1>
-        <img src="./image/cash.webp" alt="cashfree">
-        <img src="./image/razor.png" alt="razorpay">
-        <img src="./image/paytm.png" alt="paytm">
-        <img src="./image/paypal.png" alt="paypal">
-        <img src="./image/payu.png" alt="payu">
-        <img src="./image/ippo.jpeg" alt="ippopay">
-        <img src="./image/billdesk.png" alt="billdesk">
-        <img src="./image/ccavenue.png" alt="ccavenue">
-        <img src="./image/ebs.png" alt="ebs">
-        <img src="./image/paykun.png" alt="paykun">
-        <img src="./image/instamojo.jpeg" alt="instamojo">
-        <img src="./image/easebuzz.png" alt="easebuzz">
-    </div>
-    <div class="card">
-        <img src="./image/cash.webp" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>CashFree</b></h4> 
-          <p>Architect & Engineer</p> 
+    <div class="header">
+        <a href="#default" class="logo">PayWay</a>
+        <div class="header-right">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="./tool.html">Tool</a>
+            <a href="#contact">Contact</a>
         </div>
-      </div>
-    <div class="result"></div>
-    <ol>
-        <li>
-            <p class="company-name">CashFree</p>
-            <button id="select" type="button" onclick="select(1)">Add to compare</button>
-        </li>
-        <li>
-            <p class="company-name">Razorpay</p>
-            <button type="button" onclick="select(2)">Add to compare</button>
-        </li>
-        <li>
-            <p class="company-name">Paytm</p>
-            <button type="button" onclick="select(3)">Add to compare</button>
-        </li>
-        <li>
-            <p class="company-name">PayPal</p>
-            <button type="button" onclick="select(4)">Add to compare</button>
-        </li>
-        <li>
-            <p class="company-name">PayU</p>
-            <button type="button" onclick="select(5)">Add to compare</button>
-        </li>
-        <li>
-            <p class="company-name">Ippo pay</p>
-            <button type="button" onclick="select(6)">Add to compare</button>
-        </li>
-        <li>
-            <p class="company-name">BillDesk</p>
-            <button type="button" onclick="select(7)">Add to compare</button>
-        </li>
-        <li>
-            <p class="company-name">CC Avenue</p>
-            <button type="button" onclick="select(8)">Add to compare</button>
-        </li>
-        <li>
-            <p class="company-name">EBS</p>
-            <button type="button" onclick="select(9)">Add to compare</button>
-        </li>
-        <li>
-            <p class="company-name">Paykun</p>
-            <button type="button" onclick="select(10)">Add to compare</button>
-        </li>
-        <li>
-            <p class="company-name">Instamojo</p>
-            <button type="button" onclick="select(11)">Add to compare</button>
-        </li>
-        <li>
-            <p class="company-name">Easebuzz</p>
-            <button type="button" onclick="select(12)">Add to compare</button>
-        </li>
-    </ol>
-
-    <button type="button" onclick="show()">Show result</button><br>
     </div>
 
-    <table id="compare">
-    </table>
+    <div class="hero-banner">
+        <div class="hero-text">
+          <p class="h1">Looking for the best payment gateway ?</p>
+          <p>Press button to know the best.</p>
+          <a href="./tool.html">
+            <button type="button" class="button">Click me</button>
+          </a>
+        </div>
+        <div class="image">
+            <img src="./image/payway.png" alt="logo">
+        </div>
+    </div>
+
+    <div id="about">
+        <p>We compare different payment gateway and give estimate based on your transaction 
+            size.
+        </p>
+        <p>Answer the simple question and get the result.</p>
+    </div>
 </body>
 
 </html>
